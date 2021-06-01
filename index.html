@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>HTML TO IMAGE</title>
+
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,700;1,200;1,300;1,400&display=swap" rel="stylesheet">
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1 class="app-name">Quote Maker</h1>
+
+    <div id="generator-body">
+       <div class="input-box">
+           <div class="row">
+            <label for="post-header">Header</label>
+            <input type="text" name="header" id="post-header">
+           </div>
+           
+           <div class="row"> <label for="post-content">Content</label>
+            <input type="text" name="header" id="post-content"></div>
+           <div class="row"><label for="post-author">Author</label>
+            <input type="text" name="header" id="post-author"></div>
+           <div class="row"> <button id="submit" onclick="makePost()">Create Post</button></div>
+           <div class="row"><button onclick="downloadimage()" class="clickbtn">Click To Download Image</button>
+            
+        </div>
+
+        <div class="upper">
+
+            <div class="post" id="post">
+                <div class="border">
+                    <h1 class="content--header"></h1>
+                    <h2 class="content--main"></h2>
+                    <h3 class="content--author"></h3>
+                </div>
+               
+            </div>
+        </div>
+
+       
+    </div>
+
+
+</body>
+<script type="text/javascript" src="./js/app.js">
+</script>
+
+</html>
