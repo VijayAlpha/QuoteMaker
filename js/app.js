@@ -1,16 +1,18 @@
 const postHeader =  document.querySelector('#post-header');
 const postContent =  document.querySelector('#post-content');
 const postAuthor =  document.querySelector('#post-author');
+const postCreator =  document.querySelector('#post-creator');
 
 const contentHeader = document.querySelector('.content--header');
 const contentMain = document.querySelector('.content--main');
 const contentAuthor = document.querySelector('.content--author');
-
+const contentCreator = document.querySelector('.content--creator');
 
 function makePost() {
     contentHeader.innerText = postHeader.value;
     contentMain.innerText = postContent.value;
     contentAuthor.innerText = postAuthor.value;
+    contentCreator.innerText = postCreator.value;
 }
 
 

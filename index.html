@@ -1,57 +1,69 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quote Maker - Create your own qoutes quickly</title>
 
-    <title>HTML TO IMAGE</title>
-
-    
+  
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,700;1,200;1,300;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,700;1,200;1,300;1,400;1,600&display=swap" rel="stylesheet">
     <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-
+  <body>
     <h1 class="app-name">Quote Maker</h1>
+    <h2 class="app-tagline">Create your <span class="word-bold"> own</span> qoutes quickly</h2>
 
     <div id="generator-body">
-       <div class="input-box">
-           <div class="row">
-            <label for="post-header">Header</label>
-            <input type="text" name="header" id="post-header">
-           </div>
-           
-           <div class="row"> <label for="post-content">Content</label>
-            <input type="text" name="header" id="post-content"></div>
-           <div class="row"><label for="post-author">Author</label>
-            <input type="text" name="header" id="post-author"></div>
-           <div class="row"> <button id="submit" onclick="makePost()">Create Post</button></div>
-           <div class="row"><button onclick="downloadimage()" class="clickbtn">Click To Download Image</button>
+      <div class="input-box">
+        <div class="row">
+          <label for="post-header">Header</label>
+          <input type="text" name="header" id="post-header" />
+        </div>
+
+        <div class="row">
+          <label for="post-content">Content</label>
+          <textarea name="header" id="post-content" cols="30" rows="4">
             
+          </textarea>
+          <!-- <input type="text" name="header" id="post-content" /> -->
         </div>
-
-        <div class="upper">
-
-            <div class="post" id="post">
-                <div class="border">
-                    <h1 class="content--header"></h1>
-                    <h2 class="content--main"></h2>
-                    <h3 class="content--author"></h3>
-                </div>
-               
-            </div>
+        <div class="row">
+          <label for="post-author">Author</label>
+          <input type="text" name="header" id="post-author" />
         </div>
-
-       
+        <div class="row">
+          <label for="post-creator">Creator</label>
+          <input type="text" name="header" id="post-creator" />
+        </div>
+        <div class="row">
+          <button class="btn" id="submit" onclick="makePost()">Create Post</button>
+        </div>
+        <div class="row">
+          <button class="btn" onclick="downloadimage()" class="clickbtn">
+            Download Image
+          </button>
+        </div>
     </div>
 
-
-</body>
-<script type="text/javascript" src="./js/app.js">
-</script>
-
+      <div class="upper">
+        <div class="post" id="post">
+          <div class="border">
+            <div>
+              <p class="content--header">Lorem ipsum </p>
+              <p class="content--main"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi libero cum ipsa accusantium? Quod reiciendis, commodi at quia alias quam aliquam? Quas sit qui laborum possimus voluptatibus ut asperiores quaerat? </p>
+              <p class="content--author"> Lorem dolor </p>
+            </div>
+           <div class="creator-box">
+            <p class="content--creator"> @LourmQoute</p>
+           </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="./js/app.js"></script>
 </html>

@@ -1,7 +1,15 @@
+*{
+    box-sizing: border-box;
+    
+}
 
 body{
     text-align: center;
     font-family: 'Titillium Web', sans-serif;
+}
+
+label{
+    font-weight: 700;
 }
 
 #generator-body {
@@ -13,23 +21,92 @@ body{
 
 }
 
+.app-tagline{
+    font-weight: 300;
+}
+
+.word-bold{
+    font-weight: 600;
+}
+
 .h1-h1{
     text-align: center;
     font-size: 3rem;
 }
 
 .post{
+    position: relative;
     height: 400px;
     width: 400px;
     margin: 30px;
-    padding: 20px;
+    padding: 18px;
     text-align: center;
     background: #ffffff;
-    box-shadow:  20px 20px 60px #bebebe,
-             -20px -20px 60px #ffffff;;
+    box-shadow:  -20px -20px 60px #eeeeee,
+             20px 20px 60px #dfdfdf;
 }
 
 .border{
     border: 1px solid rgb(184, 184, 184);
+    padding: 20px;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content--header{
+    font-weight: 600;
+    color: #000000;
+}
+
+.content--main{
+    font-weight: 400;
+    font-size: 14px;
+}
+.content--author{
+    font-weight: 400;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.creator-box{
+    position: absolute;
+    left: 50%;
+    bottom: 6%;
+    transform: translateX(-50%);
+}
+
+.content--creator{
+    font-size: 12px;
+}
+
+.btn{
+    min-width: 62px;
+    padding: 12px 10px;
+    
+    margin: 4px;
+    border: none;
+    border-radius: 2px;
+    background-color: #272727;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 14px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.row{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin: 10px;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    #generator-body{
+        flex-direction: column;
+    }
 }
