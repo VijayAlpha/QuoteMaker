@@ -18,7 +18,7 @@ function makePost() {
 
 function downloadimage() {
             
-    var container = document.getElementById("post");
+    var container = document.querySelector("#post");
     html2canvas(container).then(function (canvas) {
 
         var link = document.createElement("a");
@@ -30,5 +30,13 @@ function downloadimage() {
     });
 }
 
-
+fetch('https://api.quotable.io/random')
+  .then(response => response.json())
+  .then(data => {
+   contentMain.innerText = postContent.value = data.content;
+    contentAuthor.innerText = postAuthor.value = data.author;
+    contentHeader.innerText = postHeader.value = data.tags[0];
+    contentCreator.innerText = postCreator.value = '@QuoteMaker';
+    console.log(data);
+  })
 
